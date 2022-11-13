@@ -580,6 +580,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-suscribe">
+          <p class="footer-form-text">subscribe to the newsletter</p>
+          <form class="footer-form">
+            <div class="footer-group">
+              <label class="footer-field">
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="email"
+                  placeholder="e-mail"
+                />
+              </label>
+              <button class="footer-btn" type="button">
+                <span class="footer-form-submit">
+                  subscribe
+                  <svg class="foo-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -589,6 +612,86 @@
             <use href="./img/icons.svg#close-black"></use>
           </svg>
         </button>
+        <p class="modal-text">leave your informationand we'll call you back</p>
+        <form class="modal-form">
+          <div class="form-group">
+            <label class="form-field">
+              <span class="form-label">name</span>
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/icons.svg#user"></use>
+              </svg>
+              <input
+                class="type-text"
+                type="text"
+                name="name"
+                placeholder="Darth Vader"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-field">
+              <span class="form-label">telephone</span>
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/icons.svg#phone"></use>
+              </svg>
+              <input
+                class="type-text"
+                type="tel"
+                name="tel"
+                placeholder="+34 6601234"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-field">
+              <span class="form-label"> e-mail</span>
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/icons.svg#email"></use>
+              </svg>
+              <input
+                class="type-text"
+                type="email"
+                name="email"
+                placeholder="Vader@death.star"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-field">
+              <span class="form-label">comments</span>
+              <textarea
+                class="type-box-text"
+                name="comments"
+                cols="30"
+                rows="10"
+                placeholder="enter the text"
+              ></textarea>
+            </label>
+          </div>
+          <label class="form-field-cheackbox">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="policy"
+              value="policy"
+              id="policy"
+            />
+            <svg class="form-checkbox-icon" width="16" height="15">
+              <use class="uncheked" href="./img/icons.svg#icon-uchecked"></use>
+              <use class="cheked" href="./img/icons.svg#icon-check"></use>
+            </svg>
+            <span class="form-agreement-text"
+              >i agree with the newsletter and accept the terms and conditions
+              <a href="" class="form-agreement-link link"
+                >privet policy</a
+              ></span
+            >
+          </label>
+          <button class="form-btn" type="submit">send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
