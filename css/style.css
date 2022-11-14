@@ -583,7 +583,7 @@ img {
 .feet {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  
 }
 
 .feet-logo {
@@ -651,6 +651,8 @@ img {
   justify-content: center;
   padding: 0;
   margin: 0;
+  margin-left: 70px;
+  margin-right: 93px;
 }
 
 .find-us-icons {
@@ -907,15 +909,17 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   background-color: transparent;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn-icon:hover,
-.close-btn-icon:focus {
+.close-btn-icon:focus,
+.close-btn:hover,
+.close-btn:focus {
   fill: var(--link-color);
+  color: var(--link-color);
 }
 
 .modal-text {
@@ -926,38 +930,43 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 2px;
 
   color: #212121;
 }
 
 .form-group {
   position: relative;
+  margin-top: 10px;
 }
 
 .type-text {
   width: 448px;
   height: 40px;
-  padding-left: 30px;
+  padding: 12px 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  /* margin-top: 4px; */
 }
 
 .type-box-text {
   width: 448px;
   height: 120px;
-
+  /* margin-top: 4px; */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+  padding: 12px 16px;
 }
 
 .form-icon {
   position: absolute;
-  top: 55%;
-  left: 19px;
+  top: 50%;
+  left: 15px;
   display: inline-block;
-  transform: translate(-50%);
+  transform: translateY(50%);
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -965,6 +974,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-icon:focus {
   fill: var(--link-color);
+}
+
+.form-field{
+  position: relative;
 }
 
 .form-message {
@@ -977,7 +990,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 
   color: #757575;
 }
@@ -998,6 +1011,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
+
 .form-checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -1008,10 +1022,17 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-field-cheackbox {
   align-items: center;
   justify-content: center;
+
+  
+}
+
+.form-cheackbox-box{
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 ::placeholder {
-  transform: translateX(100px);
+  /* transform: translateX(100px); */
 }
 
 .form-agreement-text {
@@ -1041,6 +1062,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-top: 4px;
 }
 
 .form-agreement-link {
@@ -1142,7 +1164,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-
+padding: 15px 16px;
   width: 358px;
   height: 50px;
   background-color: inherit;
@@ -1162,6 +1184,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .footer-btn:focus {
   color: var(--primery-text-color);
